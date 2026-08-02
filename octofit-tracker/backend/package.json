@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "ts-node src/server.ts",
-    "start": "ts-node src/server.ts"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "seed": "ts-node src/scripts/seed.ts"
   },
   "dependencies": {
     "express": "^5.2.1",
